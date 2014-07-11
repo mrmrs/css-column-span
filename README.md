@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .cs-all {   column-span: all; }
 .cs-span {  column-span: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .cs-non-ns  { column-span: none; }
   .cs-all-ns  { column-span: all; }
   .cs-span-ns { column-span: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .cs-non-m  { column-span: none; }
   .cs-all-m  { column-span: all; }
   .cs-span-m { column-span: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .cs-non-l  { column-span: none; }
   .cs-all-l  { column-span: all; }
   .cs-span-l { column-span: inherit; }
