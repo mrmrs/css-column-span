@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-column-span)
 ## File Size
 
 601B column-span.css
-467B column-span.min.css
+467B column-span.min.css 
+164B minified and gzipped
 
 ## The Code
 ```
