@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.4"
+    "tachyons-cli": "^1.0.8"
   },
   "scripts": {
     "start": "tachyons src/css-column-span.css > css/css-column-span.css && tachyons src/css-column-span.css --minify > css/css-column-span.min.css && tachyons src/css-column-span.css --generate-docs --package=../../package.json > readme.md"
