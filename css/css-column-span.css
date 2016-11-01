@@ -1,22 +1,22 @@
 /*
    COLUMN SPAN
 */
-.cs-non { column-span: none; }
-.cs-all { column-span: all; }
-.cs-span { column-span: inherit; }
+.cs-non { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+.cs-all { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+.cs-span { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 @media screen and (min-width: 48em) {
- .cs-non-ns { column-span: none; }
- .cs-all-ns { column-span: all; }
- .cs-span-ns { column-span: inherit; }
+ .cs-non-ns { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-ns { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-ns { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .cs-non-m { column-span: none; }
- .cs-all-m { column-span: all; }
- .cs-span-m { column-span: inherit; }
+ .cs-non-m { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-m { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-m { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 @media screen and (min-width: 64em) {
- .cs-non-l { column-span: none; }
- .cs-all-l { column-span: all; }
- .cs-span-l { column-span: inherit; }
+ .cs-non-l { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-l { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-l { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 

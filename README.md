@@ -1,10 +1,10 @@
-# css-column-span 0.0.7
+# css-column-span 1.0.6
 
 Css module of single purpose classes for column span
 
 #### Stats
 
-185 | 12 | 12
+217 | 12 | 36
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-column-span
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-column-span
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-column-span.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-column-span";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-column-span@1.0.6/css/css-column-span.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,32 +68,32 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    COLUMN SPAN
 */
-.cs-non { column-span: none; }
-.cs-all { column-span: all; }
-.cs-span { column-span: inherit; }
+.cs-non { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+.cs-all { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+.cs-span { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 @media screen and (min-width: 48em) {
- .cs-non-ns { column-span: none; }
- .cs-all-ns { column-span: all; }
- .cs-span-ns { column-span: inherit; }
+ .cs-non-ns { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-ns { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-ns { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .cs-non-m { column-span: none; }
- .cs-all-m { column-span: all; }
- .cs-span-m { column-span: inherit; }
+ .cs-non-m { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-m { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-m { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 @media screen and (min-width: 64em) {
- .cs-non-l { column-span: none; }
- .cs-all-l { column-span: all; }
- .cs-span-l { column-span: inherit; }
+ .cs-non-l { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
+ .cs-all-l { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
+ .cs-span-l { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
 }
 ```
 
@@ -95,3 +113,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
