@@ -7,9 +7,9 @@
 .cs-span {  column-span: inherit; }
 
 @media screen and (min-width: 48em) {
-  .cs-non-ns  { column-span: none; }
-  .cs-all-ns  { column-span: all; }
-  .cs-span-ns { column-span: inherit; }
+  .cs-non-s  { column-span: none; }
+  .cs-all-s  { column-span: all; }
+  .cs-span-s { column-span: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
