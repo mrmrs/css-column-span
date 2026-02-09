@@ -6,19 +6,19 @@
 .cs-all {   column-span: all; }
 .cs-span {  column-span: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .cs-non-s  { column-span: none; }
   .cs-all-s  { column-span: all; }
   .cs-span-s { column-span: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .cs-non-m  { column-span: none; }
   .cs-all-m  { column-span: all; }
   .cs-span-m { column-span: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .cs-non-l  { column-span: none; }
   .cs-all-l  { column-span: all; }
   .cs-span-l { column-span: inherit; }
