@@ -1,38 +1,44 @@
 {
   "name": "css-column-span",
-  "style": "column-span.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-column-span",
-  "description": "Css module of single purpose classes for column span",
+  "version": "2.0.0",
+  "description": "Functional CSS for column-span",
+  "style": "dist/column-span.css",
+  "main": "dist/column-span.css",
+  "exports": {
+    ".": "./dist/column-span.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "column-span"
+    "column-span",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-column-span": {
+  "homepage": "https://github.com/mrmrs/css-column-span",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-column-span.git"
+    "url": "https://github.com/mrmrs/css-column-span.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-column-span/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-column-span/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
