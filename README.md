@@ -1,116 +1,80 @@
-# css-column-span 1.0.6
+# css-column-span
 
-Css module of single purpose classes for column span
+Functional CSS for column-span
 
-#### Stats
+## Filesize
 
-217 | 12 | 36
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/column-span.css` | 605 bytes |
+| `dist/column-span.min.css` | 429 bytes (147 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-column-span
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-column-span
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-column-span.git
+```sh
+npm install css-column-span
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-column-span";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-column-span@1.0.6/css/css-column-span.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-column-span">
+<link rel="stylesheet" href="https://unpkg.com/css-column-span/dist/column-span.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   COLUMN SPAN
-*/
-.cs-non { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
-.cs-all { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
-.cs-span { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
-@media screen and (min-width: 48em) {
- .cs-non-ns { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
- .cs-all-ns { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
- .cs-span-ns { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .cs-non-m { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
- .cs-all-m { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
- .cs-span-m { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
-}
-@media screen and (min-width: 64em) {
- .cs-non-l { -webkit-column-span: none; -moz-column-span: none; column-span: none; }
- .cs-all-l { -webkit-column-span: all; -moz-column-span: all; column-span: all; }
- .cs-span-l { -webkit-column-span: inherit; -moz-column-span: inherit; column-span: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-column-span/dist/column-span.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.cs-non` | `column-span: none;` |
+| `.cs-all` | `column-span: all;` |
+| `.cs-span` | `column-span: inherit;` |
+| `.cs-non-s` | `column-span: none;` |
+| `.cs-all-s` | `column-span: all;` |
+| `.cs-span-s` | `column-span: inherit;` |
+| `.cs-non-m` | `column-span: none;` |
+| `.cs-all-m` | `column-span: all;` |
+| `.cs-span-m` | `column-span: inherit;` |
+| `.cs-non-l` | `column-span: none;` |
+| `.cs-all-l` | `column-span: all;` |
+| `.cs-span-l` | `column-span: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.cs-non-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/column-span.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/column-span.css` — formatted
+- `dist/column-span.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
